@@ -8,7 +8,7 @@ No steps required. `postgresql.conf` is automatically updated during container s
 
 ## Enabling debugger
 
-Use to following command to enable debugger for a database.
+Use following command to enable debugger for a database.
 
 ```sql
 CREATE EXTENSION pldbgapi;
