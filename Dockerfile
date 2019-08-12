@@ -21,6 +21,8 @@ RUN set -ex && \
 	cd /pldebugger && \
 	install -c -m 755 plugin_debugger.so '/usr/local/lib/postgresql/' && \
 	install -c -m 644 pldbgapi.control '/usr/local/share/postgresql/extension/' && \
-	install -c -m 644 pldbgapi--1.1.sql pldbgapi--unpackaged--1.1.sql '/usr/local/share/postgresql/extension/'
+	install -c -m 644 pldbgapi--1.1.sql pldbgapi--unpackaged--1.1.sql '/usr/local/share/postgresql/extension/' && \
+	cd / && \
+	rm -rf /pldebugger
 
 COPY install-debugger.sh /docker-entrypoint-initdb.d/
