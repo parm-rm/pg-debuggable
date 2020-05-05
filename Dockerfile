@@ -1,6 +1,6 @@
-FROM postgres:11.4-alpine
+FROM postgres:11.5-alpine
 
-ARG PLDEBUGGER_COMMIT=c3ac72942c6ba2e3b701a5291b1f6cf8f596b57c
+ARG PLDEBUGGER_COMMIT=ddbce7be9c3ac782ca3369291c1772cbe413cf75
 
 RUN set -ex && \
 	apk update && \
